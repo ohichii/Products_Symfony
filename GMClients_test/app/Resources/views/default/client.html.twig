@@ -1,0 +1,8 @@
+{# renders all fields *and* the form start and end tags #}
+{{ form_start(form) }}
+
+    {{ form_widget(form) }}
+
+    <input type="submit" value="Continue"
+           class="btn btn-default pull-right" />
+{{ form_end(form) }}

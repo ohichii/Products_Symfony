@@ -1,0 +1,10 @@
+{# renders all fields *and* the form start and end tags #}
+{{ form_start(form) }}
+
+    <a href="{{ path('addclient') }}">Insert Client</a>
+
+    {{ form_widget(form) }}
+
+    <input type="submit" value="Create"
+           class="btn btn-default pull-right" />
+{{ form_end(form) }}
